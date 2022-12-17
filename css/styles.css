@@ -1,0 +1,460 @@
+
+/* 
+Author:Cristina Duran
+Date: December 14, 2022
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images*/
+body {
+    background-color: #F2F2F2;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    color: #fff;
+    background-color: #2a1f14;
+    text-decoration: none;
+    padding: 0.5%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
+/* styles rules for mobile viewport */
+
+/* styles rule show mobile class and hide tab-desk class */
+.mobile, .mobile-tablet {
+    display: block;
+}
+
+.tab-desk, .desktop, #nav-links {
+    display: none;
+}
+
+/* Styles rules for header area */
+.mobile h1, .mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+.mobile h1 {
+    font-family: 'Emblema One', cursive;
+    margin: 2% 0 0 3%;
+}
+
+.mobile h3 {
+    font-family: 'Lora', serif;
+}
+
+/* Styles rules for navigation area */
+nav {
+    background-color: #8C8281;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: 'Lora', serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+#content {
+    padding-top: 3%;
+    text-align: center;
+}
+
+.featured-projects img {
+    width: 75%;
+    display: block;
+    padding: 1%;
+    background-color:#F2EDA2;
+    margin: 3%;
+}
+
+.headshot-container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.headshot-container img{
+    width: 85%;
+    margin: 0 auto 2%;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#contact, #form h2 {
+    text-align: center;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6, #div7 {
+    display: none;
+}
+
+.hide-show {
+    font-size: 2em;
+    padding: 10px;
+}
+
+.hide-show:hover {
+    cursor: pointer;
+}
+
+/* Style rules for form elements */
+fieldset, input, textarea {
+    margin-bottom: 1%;
+}
+
+fieldset, legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding: 1%;
+}
+
+.button {
+    margin: 1% auto 5%;
+    display: block;
+    padding: 2%;
+    background-color: #F2B6C1;
+    color: black;
+    font-size: 1.25em;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+}
+
+#download-button {
+    margin: 1% auto 5%;
+    display: block;
+    padding: 1%;
+    background-color: #F2B6C1;
+    color: #f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 250px;
+}
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #8C8281;
+    color: #f6eee4;
+    padding: 1% 0%;
+    clear: left;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+.social img {
+    display: inline-block;
+    padding: 1%;
+    width: 10%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+        text-align: center;
+
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Styles rules for header area */
+    .tab-desk h1, .tab-desk h3 {
+        text-align: center;
+    }
+
+    .tab-desk h1 {
+        font-family: 'Emblema One', cursive;
+        margin: 5% auto 1%;
+        font-size: 5em;
+    }
+
+    .tab-desk h3 {
+        font-family: 'Lora', serif;
+        font-size: 2em;
+        margin-bottom: 3%;
+    }
+
+
+    .button {
+        margin: 1% auto 5%;
+        display: block;
+        padding: 2%;
+        background-color: #F2B6C1;
+        color: black;
+        font-size: 1.25em;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        width: 13%;
+    }
+
+
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline;
+        font-size: 1.25em;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    nav li a {
+        padding: 0.5em;
+        color: #f6eee4;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+    .nav-social img {
+        width: 2%;
+        display: inline-block;
+      }
+
+    /*Tablet Viewport: Style rules for main area */
+
+    #content {
+        padding-top: 3%;
+        text-align: center;
+    }
+
+    #about {
+        text-align: left;
+        width: 75%;
+    }
+
+    .featured-projects img {
+        width: 35%;
+        display: inline;
+        padding: 1%;
+        background-color: #8C8281;
+        margin: 3%;
+    }
+
+    .headshot-container {
+        float: left;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+        padding: 2%;
+        margin-bottom: 3%;
+        margin-right: 2%;
+        text-align: center;
+    }
+    .headshot-container img{
+        width: 85%;
+        margin: 0 auto 2%;
+    }
+
+    #download-button {
+        margin: 1% auto 5%;
+        display: block;
+        float: left;
+        padding: 1%;
+        background-color: #F2B6C1;
+        color: black;
+        font-size: 1.25em;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+        width: 250px;
+    }
+
+    /*Tablet Viewport: Style rules for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /*Tablet Viewport: Style rules for footer area */
+    footer {
+        overflow: auto;
+    }
+
+    .social img {
+        display: inline;
+        width: 5%;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media  screen and (min-width: 1000px), print {
+
+    /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+    .desktop {
+        display: block;
+    }
+
+    .mobile-tablet {
+        display: none;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.25em;
+    }
+
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #2a1f14;
+        background-color: #f6eee4;
+        opacity: 0.5;
+    }
+
+    /*Desktop Viewport: Style rules for main content */
+
+    #portfolio-content {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    /*Desktop Viewport: Style rules for form elements */
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .button {
+        grid-column: 1 / span 1;
+        width: 30%;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px), print {
+
+    body {
+        background: linear-gradient(#f6eee4, #78593a);
+    }
+    
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+    main {
+        background-color: #f6eee4;
+    }
+
+    .grid {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
